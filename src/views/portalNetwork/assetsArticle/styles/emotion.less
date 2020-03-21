@@ -1,0 +1,72 @@
+/* 新浪表情样式修改 */
+.show-emotion-area{
+  overflow:hidden;
+  padding-left:10px;
+  box-sizing:border-box;
+  padding-right:38px;
+  line-height:30px;
+  .emotion{
+    border:1px solid #eee;
+    padding:5px;
+    box-sizing:border-box;
+    margin-bottom:5px;
+    max-height: 100px;
+    border-radius:5px;
+    overflow:auto;
+    img{
+      margin-right:10px;
+      vertical-align: middle;
+    }
+  }
+  .btn{
+    .el-button{
+      padding:4px 8px;
+      span{
+        font-size:12px;
+      }
+    }
+    
+  }
+}
+.sina-emotion-panel{}
+.sina-emotion-panel__header{
+  overflow:hidden;
+  margin-bottom:10px;
+  margin-top:10px;
+  .tabs{
+    width:calc(100% - 100px);
+    float:left;
+    .tabs__item{
+      margin-left:5px;
+      padding:5px 10px 5px 10px;
+      display: inline-block;
+    }
+    .tabs__item--action{
+      background:#409EFF;
+    }
+  }
+  .tabsTools{
+    width:100px;
+    float:left;
+    .btn.tabsToolsButton{
+      padding:0px 10px;
+      display: inline-block;
+      font-size:18px;
+    }
+  }
+}
+.sina-emotion-panel__content{
+  a{
+    margin-right:10px;
+    display:inline-block;
+    margin-bottom:10px;
+  }
+}
+.sina-emotion-panel__footer{}
+
+.sina-emotion-panel .btn{ /** <,>,prev,next button style **/ }
+.sina-emotion-panel .tabs{}
+.sina-emotion-panel .tabs__item{}
+.sina-emotion-panel .tabs__item--action{}
+.sina-emotion-panel .tabsTools{}
+.sina-emotion-panel .tabsToolsButton{}

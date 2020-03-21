@@ -1,0 +1,142 @@
+{
+  "name": "vue-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build workbenchArticle && vue-cli-service build total && vue-cli-service build course && vue-cli-service build knowledge && vue-cli-service build exam && vue-cli-service build task && vue-cli-service build feedback",
+    "build-workbench-article": "vue-cli-service build workbenchArticle",
+    "build-workbench-org-structure": "vue-cli-service build workbenchOrganizationalStructure",
+    "build-portalnetwork": "vue-cli-service build portalNetwork",
+    "build-exhibition-justLook": "vue-cli-service build exhibitionJustLook",
+    "build-total": "vue-cli-service build total",
+    "build-studyplatform-course": "vue-cli-service build course",
+    "build-studyplatform-knowledge": "vue-cli-service build knowledge",
+    "build-studyplatform-exam": "vue-cli-service build exam",
+    "build-task": "vue-cli-service build task",
+    "build-feedback": "vue-cli-service build feedback",
+    "build-pmdSystem": "vue-cli-service build pmdsystem",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bpmn-js": "^5.0.4",
+    "bpmn-js-properties-panel-activiti-support": "^0.32.1",
+    "core-js": "^2.6.5",
+    "custom-bpmn-activiti": "^0.2.12",
+    "customform": "^0.1.8",
+    "debounce": "^1.2.0",
+    "echarts": "^4.2.1",
+    "element-ui": "^2.12.0",
+    "font-awesome": "^4.7.0",
+    "inherits": "^2.0.4",
+    "jquery": "^3.4.1",
+    "js-md5": "^0.7.3",
+    "mavon-editor": "^2.7.6",
+    "min-dash": "^3.5.2",
+    "min-dom": "^3.1.1",
+    "qs": "^6.8.0",
+    "sortablejs": "^1.10.0-rc3",
+    "undefined": "^0.1.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuedraggable": "^2.23.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-plugin-unit-jest": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "autoprefixer": "^9.6.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "bpmn-js-properties-panel": "^0.32.1",
+    "camunda-bpmn-moddle": "^4.1.2",
+    "chalk": "^2.4.2",
+    "css-loader": "^3.2.0",
+    "diagram-js": "^5.0.2",
+    "element-theme-chalk": "^2.10.1",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "loader": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-url": "^8.0.0",
+    "raw-loader": "^3.1.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "vue-ueditor-wrap": "^2.4.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.vue$": "vue-jest",
+      ".+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
+    "testMatch": [
+      "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
+    ],
+    "testURL": "http://localhost/",
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  }
+}
